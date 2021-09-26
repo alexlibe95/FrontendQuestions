@@ -1,11 +1,17 @@
 body {
+    margin: 0;
     background-color: rgb(22, 22, 22);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .title-container {
+    top: 0;
+    background-image: linear-gradient(to top, rgba(22, 22, 22, 0.2), rgba(22, 22, 22, 0.8), rgba(22, 22, 22, 0.95), rgba(22, 22, 22, 1),  rgba(22, 22, 22, 1));
+    padding-top: 40px;
+    width: 100vw;
+    min-height: 70px;
     text-align: center;
-    margin: 80px 40px;
+    position: fixed;
     font-size: 28px;
     font-weight: 600;
     color: rgb(255, 102, 102);
@@ -17,11 +23,22 @@ body {
 }
 
 .questions-container {
+    padding-top: 100px;
     margin: 10px 20px;
 }
 
 .questions-container ol{
     color: rgb(195, 254, 255)
+}
+
+.questions-container ul {
+    color: rgb(255, 255, 255);
+}
+
+.questions-container ul li span{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
 }
 
 .questions-container li span{
