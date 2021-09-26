@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(22, 22, 22);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title-container {
+    text-align: center;
+    margin: 80px 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(255, 102, 102);
+}
+
+.title-container span {
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+
+.questions-container {
+    margin: 10px 20px;
+}
+
+.questions-container ol{
+    color: rgb(195, 254, 255)
+}
+
+.questions-container li span{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(195, 254, 255)
+}
+
+.questions-container li p{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
