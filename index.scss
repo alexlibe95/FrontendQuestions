@@ -22,7 +22,7 @@ body {
   background-image: linear-gradient(to top, rgba($bg_color, 0.2), rgba($bg_color, 0.8), rgba($bg_color, 0.95), rgba($bg_color, 1),  rgba($bg_color, 1));
   padding-top: 40px;
   width: 100vw;
-  min-height: 70px;
+  min-height: 85px;
   text-align: center;
   position: fixed;
   font-size: $title_size;
@@ -36,7 +36,7 @@ body {
 }
 
 .questions-container {
-  padding-top: 100px;
+  padding-top: 110px;
   margin-right: 20px;
   max-width: 1200px;
 }
@@ -45,23 +45,27 @@ body {
   color: $primary_color;
 }
 
+.questions-container ol>li{
+  padding-bottom: 25px;
+}
+
 .questions-container ul {
   color: $secondary_color;
 }
 
-.questions-container ul li span{
+.questions-container ul>li>span{
   font-size: $answ_size;
   font-weight: $normal_font;
   color: $secondary_color;
 }
 
-.questions-container li span{
+.questions-container li>span{
   font-weight: $bold_font;
   font-size: $answ_title_size;
   color: $primary_color;
 }
 
-.questions-container li p{
+.questions-container li>p{
   font-size: $answ_size;
   color: $secondary_color;
 }

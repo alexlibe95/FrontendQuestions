@@ -5,24 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <title>Interview questions</title>
 </head>
+<script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var input, filter, ul, li, a, i;
+        input = $("#myInput").val();
+        filter = input.toUpperCase();
+        $("#list > li").each(function() {
+            if ($(this).text().toUpperCase().search(filter) > -1) {
+                $(this).show();
+            }
+            else {
+                $(this).hide();
+            }
+        });
+      });
+    });
+</script>
 <body>
     <div class="title-container">
-        <span>Best Frontend Interview Questions</span>
+        <span>Best Frontend Interview Questions</span><br />
+        <input id="myInput" type="text" placeholder="Search..">
     </div>
     <div class="questions-container">
-        <ol>
-            <li>
+        <ol id="list">
+            <li id="q">
                 <span>Explain the importance of the HTML DOCTYPE?</span>
                 <p>DOCTYPE is an instruction to the web browser regarding what version of the markup language the page is written. The DOCTYPE declaration need to be the pretty first thing in your HTML document, before the <html> tag. Doctype declaration points to a Document Type Definition (DTD). It provides markup language rules, so a browser can interpret the content correctly.</p>
             </li>
-
-            <li>
+            <li id="q">
                 <span>Explain what is lazy loading?</span>
                 <p>Lazy loading is a design pattern generally utilized in computer programming to delay initialization of an object until the period at which it is required. It can contribute to performance in the program’s operation if correctly and properly utilized. Besides, it is a loading code only once the user needs it. For instance, there is a button on the page, which reveals a different layout once the user pressed it. Hence, there is no necessary to load code for that layout on initial page load.</p>
             </li>
-            <li>
+            <li id="q">
                 <span>Explain what is the difference between Class and Prototypal inheritance?</span>
                 <p>Inheritance in JavaScript is different from most other programming languages. The object system in JavaScript is prototype based, not class based. Objects in JavaScript are just a collection of a name (key) and value pairs. When it comes to inheritance, JavaScript only has one construct: objects. Every object has a private property which contains a link to another object called its prototype.</p>
             </li>
