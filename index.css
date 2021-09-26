@@ -1,53 +1,55 @@
 body {
-    margin: 0;
-    background-color: rgb(22, 22, 22);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #161616;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .title-container {
-    top: 0;
-    background-image: linear-gradient(to top, rgba(22, 22, 22, 0.2), rgba(22, 22, 22, 0.8), rgba(22, 22, 22, 0.95), rgba(22, 22, 22, 1),  rgba(22, 22, 22, 1));
-    padding-top: 40px;
-    width: 100vw;
-    min-height: 70px;
-    text-align: center;
-    position: fixed;
-    font-size: 28px;
-    font-weight: 600;
-    color: rgb(255, 102, 102);
+  top: 0;
+  background-image: linear-gradient(to top, rgba(22, 22, 22, 0.2), rgba(22, 22, 22, 0.8), rgba(22, 22, 22, 0.95), #161616, #161616);
+  padding-top: 40px;
+  width: 100vw;
+  min-height: 70px;
+  text-align: center;
+  position: fixed;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ff6666;
 }
 
 .title-container span {
-    -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: white;
 }
 
 .questions-container {
-    padding-top: 100px;
-    margin: 10px 20px;
+  padding-top: 100px;
+  margin: 10px 20px;
 }
 
-.questions-container ol{
-    color: rgb(195, 254, 255)
+.questions-container ol {
+  color: #c3feff;
 }
 
 .questions-container ul {
-    color: rgb(255, 255, 255);
+  color: white;
 }
 
-.questions-container ul li span{
-    font-size: 18px;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
+.questions-container ul li span {
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
 }
 
-.questions-container li span{
-    font-weight: 600;
-    font-size: 20px;
-    color: rgb(195, 254, 255)
+.questions-container li span {
+  font-weight: 600;
+  font-size: 20px;
+  color: #c3feff;
 }
 
-.questions-container li p{
-    font-size: 18px;
-    color: rgb(255, 255, 255);
+.questions-container li p {
+  font-size: 18px;
+  color: white;
 }
+
+/*# sourceMappingURL=test.css.map */
