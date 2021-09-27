@@ -76,7 +76,7 @@
             </li>
             <li>
                 <span>How can you increase page performance?</span>
-                <p>I can increase the page performance by the following methods.
+                <p>I can increase the page performance by the following methods:
                     <ul>
                         <li>
                             <span>Clean up the HTML document.</span>
@@ -100,9 +100,60 @@
                 </p>
             </li>
             <li>
+                <span>What is the `this` keyword in JavaScript?</span>
+                <p>this is a little tricky in JavaScript. Its value is determined by what the function you are inside of is called. In the global state, this is set to the window object. The value of this also depends on whether or not you are in strict mode. Inside a top-level function, a strict mode this will be undefined, whereas a non-strict mode this will be the window object. It's also worth knowing that the value of this can be overwritten with the bind method.</p>
+            </li>
+            <li>
                 <span>What is Ajax?</span>
                 <p>AJAX (Asynchronous JavaScript and XML) allows applications to transport data to/from a server asynchronously without refreshing the page. This means that it is likely to update parts of a web page, without reloading the entire page. For instance, your new Gmail messages arrive and are marked as new even if you have not refreshed the web page.</p>
             </li>
+            <li>
+                <span>What is the difference between let, const, and var?</span>
+                <p>Originally, var was the only option JavaScript had for defining variables. In ES6, we got const and let as additional options. The important takeaways are:
+                    <ul>
+                        <li>
+                            <span>Variables defined with const cannot be reassigned.</span>
+                        </li>
+                        <li>
+                            <span>Const and let variables are block-scoped.</span>
+                        </li>
+                        <li>
+                            <span>Var variables are function scoped.</span>
+                        </li>
+                        <li>
+                            <span>Variables defined with var are hoisted.</span>
+                        </li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                <span>What is the difference between == and ===?</span>
+                <p>Doubles equals checks for value only. Before checking, it does any necessary type coercion. For example, the string "1" will be == to the integer 1, but it will not be ===. Many projects these days prefer to always use ===. Although, some folks advocate writing code that works well with the == type coercion.</p>
+            </li>
+            <li>
+                <span>What is functional programming in JavaScript?</span>
+                <p>Functional programming refers to using pure functions. In the context of JavaScript, this means familiarizing yourself with map, filter, and reduce. It's also worth understanding the concept of immutability.</p>
+            </li>
+            <li>
+                <span>What are some alternatives to writing pure CSS?</span>
+                <p>Lots of teams use a CSS preprocessor like Less or SASS. Some teams use css-in-js libraries like styled-components. Others still use utility frameworks such as Tailwind. Again, no need to learn how to use all of these, but they are nice to be aware of at a high level!</p>
+            </li>
+            <li>
+                <span>What are some options for testing JavaScript code?</span>
+                <p>Unit test frameworks like Jest are very popular. Teams also use tools like Selenium or Puppeteer to test the entire website.</p>
+            </li>
+            <li>
+                <span>What is the difference between unit tests and end-to-end tests?</span>
+                <p>There is a ton of overlap but at a high-level unit tests mean testing your actual code. Making sure that functions return expected results when given specific inputs. End-to-end tests are intended to test the website itself, not the code. They simulate clicks and scrolls and make sure the site behaves accordingly.</p>
+            </li>
+            <li>
+                <span>What is the box model?</span>
+                <p>The CSS box model refers to the way CSS handles layout. Each element is composed of its content, padding, border, and margin.</p>
+            </li>
+            <li>
+                <span>What is the difference between inline and block elements?</span>
+                <p>Inline elements cannot have a height or width. Examples of inline elements include span, a, and img. Block elements get their own line and take up the full width available. Examples of block elements are div, p, and h1.</p>
+            </li>       
             <li>
                 <span>What is the difference between Block, Inline,  Inline-block, and Box-sizing?</span>
                 <p>
@@ -133,6 +184,14 @@
             <li>
                 <span>Explain the difference between cookies, session storage, and local storage?</span>
                 <p>Cookies allow applications to store data in a client’s browser. Session storage property allows applications to store data until the browser window is closed. Local storage property allows applications to store data without an expiration date.</p>
+            </li>
+            <li>
+                <span>What is a bundler?</span>
+                <p>We like to author code by separating components into individual files. This makes it nice for us as developers but would be very slow if you try to force the user to load all 100+ files. Therefore we use a tool like webpack to grab all the files and concatenate them together. That way, we can serve 1 or 2 "bundles" of code instead of 100 individual files.</p>
+            </li>
+            <li>
+                <span>What is a CDN?</span>
+                <p>A Content Delivery Network like Cloudflare gives us geographically distributed servers so people can load our app from a location near them. Instead of people all over the world having to wait for files to come from your hometown.</p>
             </li>
             <li>
                 <span>Explain meta tags in HTML</span>
